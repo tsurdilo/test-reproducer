@@ -46,7 +46,7 @@ public class ChildWorkflowPolicyTest {
             e.printStackTrace();
         }
         // Child should have terminated when parent completed
-        Assert.assertEquals("WORKFLOW_EXECUTION_STATUS_TERMINATED", getExecutionStatus(parentExecution));
+        Assert.assertEquals("WORKFLOW_EXECUTION_STATUS_TERMINATED", getExecutionStatus(childExecution));
     }
 
     private String getExecutionStatus(WorkflowExecution execution) {
